@@ -267,6 +267,59 @@ section{
   font-size: 2.5rem;
 }
 
+/* Comment us section */
+
+.add-comment .comment-form{
+  border: 1rem solid var(--mucolor);
+  background-color: var(--mucolor);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.add-comment .comment-form label{
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.add-comment .comment-form input, textarea{
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+.rating__stars {
+  font-size: 36px;
+  color: #ccc;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.rating__stars .fas {
+  margin-right: 10px;
+}
+
+.rating__stars .fas:hover,
+.rating__stars .fas.active {
+  color: gold;
+}
+
+.rating__text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.add-comment .comment-form .txtB{
+  font-size: large;
+}
+
+.add-comment .comment-form .btn{
+  margin-left: 45%;
+}
+
+
 /* Contact section */
 .contact .row{
   display: flex;
@@ -406,4 +459,89 @@ footer .credit span{
     font-size: 50%;
   }
 
+}
+
+/* Documentation page */
+
+.doc-home{
+  min-height: 100vh;
+  background: url(/images/documentation.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -14.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.doc-home .content {
+  max-width: 60rem;
+}
+
+.doc-home .content h3{
+  font-size: 6rem;
+  color: white;
+}
+
+.doc-home .content p{
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: white;
+}
+
+.documentation .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.documentation .box-container .box{
+  background-color: var(--mucolor);
+  border-radius: 3rem;
+}
+
+.documentation .box-container .box .image{
+  height: 25rem;
+  overflow: hidden;
+  width: 75%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  margin: 0rem 5rem;
+}
+
+.documentation .box-container .box .image img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.documentation .box-container .box:hover .image img{
+  transform: scaleY(1.09);
+}
+
+.documentation .box-container .box .content{
+  padding: 2rem;
+}
+
+.documentation .box-container .box .content .title{
+  line-height: 1.5;
+  font-size: 2.5rem;
+}
+
+.documentation .box-container .box .content p{
+  line-height: 1.8;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  padding: 1rem 0;
+}
+
+.documentation .first-text p{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-style: oblique;
+}
+
+.documentation .box-container .box .content .btn{
+  margin-left: 5rem;
 }

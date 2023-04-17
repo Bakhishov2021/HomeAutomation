@@ -20,3 +20,26 @@ menuBtn.addEventListener("click", function(){
         }
     })
 })
+
+const stars = document.querySelectorAll(".rating__stars i");
+
+
+let rating = 0;
+
+stars.forEach((star) => {
+  star.addEventListener("click", () => {
+    rating = star.dataset.rating;
+    updateRating();
+  });
+});
+
+function updateRating() {
+  stars.forEach((star) => {
+    if (star.dataset.rating <= rating) {
+      star.classList.add("active");
+    } else {
+      star.classList.remove("active");
+    }
+  });
+
+}
